@@ -115,7 +115,6 @@ getGroups()
       getNotes(group._id); 
     }
   }, []);
-  
   useEffect(() => {
     if (selectedGroup) {
       localStorage.setItem("selectedGroup", JSON.stringify(selectedGroup));
