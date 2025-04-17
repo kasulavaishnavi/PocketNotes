@@ -1,31 +1,38 @@
 const express = require("express");
-const cors = require("cors")
+const cors = require("cors");
 
 const app = express();
 
-//Port 
-const port = process.env.PORT || 4000
+// Port
+const port = process.env.PORT || 4000;
 
-//Database Conncetion
+// Database Connection
 require("./database/connection");
 
-
-//Require Routes
+// Require Routes
 const noteRoutes = require("./routes/notesRoutes");
 
-app.get("/", (req,res)=>{
-    res.send("hello");
-})
+app.get("/", (req, res) => {
+  res.send("hello");
+});
 
-
-//middleware
+// Middleware
 app.use(express.json());
-app.use(cors());
 
-//Routes 
+// Configure CORS options
+const corsOptions = {
+  origin: "https://pocketnotes-kbmm.onrender.com", // Allow requests from your frontend origin
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Specify allowed HTTP methods
+  credentials: true, // If you need to handle cookies or authorization headers
+  allowedHeaders: "Content-Type,Authorization", // Specify allowed request headers
+};
 
-app.use("/api",noteRoutes)
+// Use CORS middleware with the specified options
+app.use(cors(corsOptions));
 
-app.listen(port,()=>{
-    console.log(`Server is running at PORT: ${port}`);
-})
+// Routes
+app.use("/api", noteRoutes);
+
+app.listen(port, () => {
+  console.log(`Server is running at PORT: ${port}`);
+});
