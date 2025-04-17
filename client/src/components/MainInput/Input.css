@@ -236,7 +236,7 @@ i{
     letter-spacing: 1px;
     font-weight: 400;
 position: absolute;
-left: 24%;
+left: 23%;
   }
   .back-arrow-link i{
     color: white;
@@ -253,7 +253,7 @@ left: 24%;
     width: 100vw;
     min-height: auto; 
     position: relative;
-    top:6%;
+    top:7%;
     height: 22vh;
 }
 
