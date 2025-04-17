@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "./Sidebar.css";
 import { Data } from "../../Context/NotesContext";
-import Input from "../MainInput/Input";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {

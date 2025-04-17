@@ -48,7 +48,6 @@ getGroups()
       try {
         const response = await axios.get(`https://pocketnotes-backend-vsva.onrender.com/api/group?groupId=${groupId}`); 
         setNotes(response.data);
-        console.log("Notes state updated in context:", response.data);
       } catch (error) {
         console.error('Error fetching notes:', error);
         setNotes([]);

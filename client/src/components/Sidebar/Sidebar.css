@@ -75,16 +75,16 @@ a {
     cursor: pointer;
     text-decoration: none;
     background-color: #16008B;
-    padding: 10px 15px; /* Add padding here */
-    height: auto; /* Reset height */
+    padding: 10px 15px; 
+    height: auto; 
 }
 
 .circle-name{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     color: white;
     margin-left: 20px;
@@ -209,8 +209,8 @@ li a.active {
 
     }
     .circle-name {
-        width: 49px;
-        height: 48px;
+        width: 38px;
+        height: 38px;
         font-size: 1.5rem;
     }
 

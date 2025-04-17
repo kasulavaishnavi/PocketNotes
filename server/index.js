@@ -21,10 +21,10 @@ app.use(express.json());
 
 // Configure CORS options
 const corsOptions = {
-  origin: "https://pocketnotes-kbmm.onrender.com", // Allow requests from your frontend origin
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Specify allowed HTTP methods
-  credentials: true, // If you need to handle cookies or authorization headers
-  allowedHeaders: "Content-Type,Authorization", // Specify allowed request headers
+  origin: "https://pocketnotes-kbmm.onrender.com", 
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", 
+  credentials: true, 
+  allowedHeaders: "Content-Type,Authorization", 
 };
 
 // Use CORS middleware with the specified options

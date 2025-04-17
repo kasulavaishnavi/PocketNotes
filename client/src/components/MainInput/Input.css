@@ -10,11 +10,10 @@ padding: 0%;
 .navbar {
   display: flex;
   align-items:center;
-  /* justify-content: center; */
   background-color: #001F8B;
   color: white;
-  justify-content: space-between; /* Push items to ends */
-  height: 9%; /* Adjust height as needed */
+  justify-content: space-between; 
+  height: 8%; 
   box-sizing: border-box;
   width: 80vw;
 }
@@ -64,7 +63,7 @@ padding: 0%;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: auto; /* Adjust height based on content */
+    min-height: auto;
     position: relative;
     margin-top: 10px; 
     background-color: #16008B;
@@ -76,8 +75,8 @@ padding: 0%;
 
 .new-note-input{
     display: flex;
-    align-items: center; /* Align textarea and button vertically */
-    justify-content: space-between; /* Space out textarea and button */
+    align-items: center; 
+    justify-content: space-between; 
     width: 100%;
     position: relative;
     top: 2%;
@@ -182,7 +181,6 @@ margin-bottom: 0;
 
 
 /* -----------Background Image--------------- */
-/* ----------------CONTENT PART----------------- */
  .content-img{
   display: flex;
 align-items: center;
@@ -227,7 +225,7 @@ i{
 
   .navbar {
     width: 100vw;
-    height: 8%;
+    height: 7%;
   }
 
   .nav-heading {
@@ -235,11 +233,11 @@ i{
     letter-spacing: 1px;
     font-weight: 400;
 position: absolute;
-left: 25%;
+left: 24%;
   }
   .back-arrow-link i{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .circle-name {
     font-size: 1rem;
@@ -250,7 +248,7 @@ left: 25%;
   
   .note-container {
     width: 100vw;
-    min-height: auto; /* Adjust height based on content */
+    min-height: auto; 
     position: relative;
     top:5%;
     height: 22vh;
@@ -258,8 +256,8 @@ left: 25%;
 
 .new-note-input{
     display: flex;
-    align-items: center; /* Align textarea and button vertically */
-    justify-content: space-between; /* Space out textarea and button */
+    align-items: center; 
+    justify-content: space-between; 
     width: 100%;
     position: relative;
     top: 2%;

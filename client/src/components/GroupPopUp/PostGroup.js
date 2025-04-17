@@ -18,9 +18,10 @@ const PostGroup = ({ onClose }) => {
       createGroup(groupName.trim(),selectedColor);
       setGroupName('');
       onClose();
-    } else {
+    } 
+    
+    else {
       alert('Group name must be at least 2 characters.');
-      
     }
   };
 
