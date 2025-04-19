@@ -61,7 +61,7 @@ res.status(201).json(group);
 //Delete Data
 const deleteGroup = async(req,res)=>{
     const {id} = req.params;
-    console.log("Backend received req.params:", req.params); // Log the entire params object
+    console.log("Backend received req.params:", req.params);
   console.log("Backend received ID (req.params.id):", id);
     try{
 const deleteGroup =await Groups.findByIdAndDelete(id);

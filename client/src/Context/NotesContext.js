@@ -17,9 +17,9 @@ const NotesContext = ({ children }) => {
       console.error('Error fetching groups:', error);
     }
   }, []);
-  useEffect(()=>{
-getGroups()
-  },[])
+//   useEffect(()=>{
+// getGroups()
+//   },[])
 
   const createGroup = async (name,color) => {
     try {
@@ -84,9 +84,9 @@ getGroups()
   };
 
   // Fetch groups on initial component mount
-  useEffect(() => {
-    getGroups();
-  }, []);
+  // useEffect(() => {
+  //   getGroups();
+  // }, []);
 
 
 
