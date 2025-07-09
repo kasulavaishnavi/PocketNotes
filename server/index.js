@@ -21,7 +21,7 @@ app.use(express.json());
 
 // Configure CORS options
 const corsOptions = {
-  origin: "https://pocketnotes-kbmm.onrender.com", 
+  origin: ["https://pocketnotes-kbmm.onrender.com", "http://localhost:3001"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", 
   credentials: true, 
   allowedHeaders: "Content-Type,Authorization", 
