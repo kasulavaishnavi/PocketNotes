@@ -19,16 +19,26 @@ app.get("/", (req, res) => {
 // Middleware
 app.use(express.json());
 
-// Configure CORS options
+const allowedOrigins = [
+  "https://pocketnotes-kbmm.onrender.com",
+  "http://localhost:3001"
+];
+
 const corsOptions = {
-  origin: ["https://pocketnotes-kbmm.onrender.com", "http://localhost:3001"],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", 
-  credentials: true, 
-  allowedHeaders: "Content-Type,Authorization", 
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+  allowedHeaders: "Content-Type,Authorization",
 };
 
-// Use CORS middleware with the specified options
 app.use(cors(corsOptions));
+
 
 // Routes
 app.use("/api", noteRoutes);
